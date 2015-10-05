@@ -1,0 +1,39 @@
+<head>
+  <title>newapp</title>
+</head>
+
+<body>
+
+</body>
+
+<template name="startpage">
+  login/register
+  <a href="{{pathFor route='home'}}">skip</a>
+</template>
+<template name="home">
+	<div class = "wrapper">
+    {{>swipe Swiper=Swiper}}
+    </div>
+</template>
+
+<template name = "menu">
+	<div class="next swipe-control"  style="float:right">GRIZTI</div>
+    <h1>menu</h1>
+    <li>MANO IDEJOS</li>
+    <li>ideju kategorija</li>
+    <li>ideju kategorija</li>
+    <li>ideju kategorija</li>
+    <li>ideju kategorija</li>
+    <li><a href="{{pathFor route='start'}}">LOGIN</a></li>
+</template>
+
+<template name = "all">
+	<div class="previous swipe-control" style="float:left">MENU</div>
+    <div class="next swipe-control" style="float:right">SUKURTI IDEJA</div>
+	<h1>Visi projektai</h1>
+	
+</template>
+<template name = "add">
+	<div class="previous swipe-control">GRIZTI</div>
+    <h1>sukurti projekta</h1>
+</template>
